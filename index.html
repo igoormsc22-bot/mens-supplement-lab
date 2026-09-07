@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Men's Supplement Lab | Supplement Checklist</title>
+
+  <meta
+    name="description"
+    content="A simple checklist to help men evaluate daily wellness supplements."
+  />
+
+  <style>
+    :root {
+      --bg: #07090d;
+      --surface: #10141b;
+      --surface-2: #161b24;
+      --text: #f4f7fb;
+      --muted: #9ba5b5;
+      --accent: #9b5cff;
+      --accent-2: #b77cff;
+      --green: #42d392;
+      --border: rgba(255,255,255,0.09);
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 50% -10%, rgba(155,92,255,0.18), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    /* NAV */
+
+    nav {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(7,9,13,0.82);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      font-size: 18px;
+    }
+
+    .logo span {
+      color: var(--accent-2);
+    }
+
+    .nav-label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 85px 0 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 13px;
+      border: 1px solid rgba(155,92,255,0.35);
+      background: rgba(155,92,255,0.08);
+      border-radius: 999px;
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: auto;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -3px;
+    }
+
+    h1 span {
+      color: var(--accent-2);
+    }
+
+    .hero-text {
+      max-width: 680px;
+      margin: 25px auto 35px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .primary-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 56px;
+      padding: 0 28px;
+      background: var(--accent);
+      color: white;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 0;
+      cursor: pointer;
+      transition: 0.2s ease;
+      box-shadow: 0 12px 35px rgba(155,92,255,0.25);
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-2px);
+      background: var(--accent-2);
+    }
+
+    .small-note {
+      margin-top: 15px;
+      color: #737d8d;
+      font-size: 12px;
+    }
+
+    /* TRUST STRIP */
+
+    .trust {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .trust-inner {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* CHECKLIST */
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(30px, 5vw, 48px);
+      letter-spacing: -1.5px;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 45px;
+    }
+
+    .checklist-card {
+      max-width: 760px;
+      margin: auto;
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.05),
+        rgba(255,255,255,0.025)
+      );
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .progress-wrap {
+      margin-bottom: 30px;
+    }
+
+    .progress-top {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 9px;
+    }
+
+    .progress {
+      width: 100%;
+      height: 6px;
+      background: #242a35;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 20%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transition: width 0.3s ease;
+    }
+
+    .question-number {
+      color: var(--accent-2);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .question {
+      font-size: 27px;
+      line-height: 1.25;
+      margin-bottom: 25px;
+    }
+
+    .answers {
+      display: grid;
+      gap: 12px;
+    }
+
+    .answer {
+      padding: 17px 18px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-weight: 600;
+    }
+
+    .answer:hover {
+      border-color: rgba(155,92,255,0.7);
+      transform: translateX(3px);
+    }
+
+    /* RESULT */
+
+    #result {
+      display: none;
+    }
+
+    .result-score {
+      text-align: center;
+      padding: 20px 0 30px;
+    }
+
+    .score-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid var(--accent);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 22px;
+      font-size: 34px;
+      font-weight: 900;
+    }
+
+    .result-title {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .result-text {
+      color: var(--muted);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* CRITERIA */
+
+    .criteria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .criteria-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 15px;
+    }
+
+    .criteria-card h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .criteria-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .check {
+      color: var(--green);
+      margin-right: 7px;
+    }
+
+    /* REVIEW */
+
+    .review-box {
+      max-width: 900px;
+      margin: auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+    }
+
+    .review-label {
+      color: var(--accent-2);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+
+    .review-box h2 {
+      font-size: 38px;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+
+    .review-box p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .review-list {
+      list-style: none;
+      margin: 25px 0;
+    }
+
+    .review-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      color: #dce2eb;
+    }
+
+    /* CTA */
+
+    .final-cta {
+      text-align: center;
+      padding: 90px 20px;
+      background:
+        radial-gradient(circle at center, rgba(155,92,255,0.14), transparent 60%);
+    }
+
+    .final-cta h2 {
+      font-size: clamp(34px, 6vw, 56px);
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .final-cta p {
+      max-width: 620px;
+      margin: 0 auto 30px;
+      color: var(--muted);
+    }
+
+    /* DISCLOSURE */
+
+    .disclosure {
+      padding: 45px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .disclosure p {
+      color: #727c8b;
+      font-size: 12px;
+      max-width: 900px;
+      margin: 0 auto 12px;
+      text-align: center;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: #697382;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .hero {
+        padding: 65px 0 55px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .checklist-card {
+        padding: 24px 18px;
+      }
+
+      .question {
+        font-size: 23px;
+      }
+
+      .criteria {
+        grid-template-columns: 1fr;
+      }
+
+      .review-box {
+        padding: 28px 20px;
+      }
+
+      .review-box h2 {
+        font-size: 30px;
+      }
+
+      .nav-label {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">
+        Men's <span>Supplement Lab</span>
+      </div>
+
+      <div class="nav-label">
+        Independent Information
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+    <div class="container">
+
+      <div class="eyebrow">
+        60-Second Supplement Checklist
+      </div>
+
+      <h1>
+        What Should You Look For In A
+        <span>Men's Wellness Formula?</span>
+      </h1>
+
+      <p class="hero-text">
+        There are dozens of men's wellness supplements available online.
+        Before choosing one, use this simple checklist to understand what
+        information is worth checking.
+      </p>
+
+      <a href="#checklist" class="primary-btn">
+        Start The 60-Second Check
+      </a>
+
+      <div class="small-note">
+        Educational information only · Not medical advice
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- TRUST -->
+
+  <section class="trust">
+    <div class="container trust-inner">
+      <span>✓ Ingredient transparency</span>
+      <span>✓ Product information</span>
+      <span>✓ Manufacturer details</span>
+      <span>✓ Daily-use considerations</span>
+    </div>
+  </section>
+
+
+  <!-- CHECKLIST -->
+
+  <section class="section" id="checklist">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        The 60-Second Checklist
+      </h2>
+
+      <p class="section-subtitle">
+        Answer five simple questions. There are no medical diagnoses or
+        personal health assessments involved.
+      </p>
+
+
+      <div class="checklist-card">
+
+        <div id="questions">
+
+          <div class="progress-wrap">
+
+            <div class="progress-top">
+              <span id="progressText">Question 1 of 5</span>
+              <span id="percent">20%</span>
+            </div>
+
+            <div class="progress">
+              <div
+                class="progress-bar"
+                id="progressBar">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="question-number">
+            Checklist
+          </div>
+
+          <h3
+            class="question"
+            id="questionText">
+          </h3>
+
+          <div
+            class="answers"
+            id="answers">
+          </div>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div id="result">
+
+          <div class="result-score">
+
+            <div class="score-circle">
+              <span id="score">0</span>%
+            </div>
+
+            <h2 class="result-title">
+              Your checklist is complete.
+            </h2>
+
+            <p class="result-text">
+              You now have a simple framework for comparing men's wellness
+              supplements based on transparency and available product
+              information.
+            </p>
+
+          </div>
+
+          <div class="criteria">
+
+            <div class="criteria-card">
+              <h3>
+                <span class="check">✓</span>
+                Formula transparency
+              </h3>
+
+              <p>
+                Look for clear information about the ingredients included
+                in the formula.
+              </p>
+            </div>
+
+            <div class="criteria-card">
+              <h3>
+                <span class="check">✓</span>
+                Product information
+              </h3>
+
+              <p>
+                The manufacturer should provide accessible information
+                about the product.
+              </p>
+            </div>
+
+            <div class="criteria-card">
+              <h3>
+                <span class="check">✓</span>
+                Usage information
+              </h3>
+
+              <p>
+                Understand how the product is intended to fit into a
+                daily routine.
+              </p>
+            </div>
+
+            <div class="criteria-card">
+              <h3>
+                <span class="check">✓</span>
+                Purchase transparency
+              </h3>
+
+              <p>
+                Review the manufacturer's current pricing, policies and
+                purchase information.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EDUCATIONAL SECTION -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Five Things Worth Checking
+      </h2>
+
+      <p class="section-subtitle">
+        A supplement should be evaluated based on what is actually
+        disclosed about the product—not exaggerated promises.
+      </p>
+
+
+      <div class="criteria">
+
+        <div class="criteria-card">
+          <h3>01 — Ingredients</h3>
+
+          <p>
+            Can you easily find the ingredients included in the formula?
+          </p>
+        </div>
+
+        <div class="criteria-card">
+          <h3>02 — Transparency</h3>
+
+          <p>
+            Does the manufacturer clearly explain what the product is?
+          </p>
+        </div>
+
+        <div class="criteria-card">
+          <h3>03 — Routine</h3>
+
+          <p>
+            Is the intended daily use clearly explained?
+          </p>
+        </div>
+
+        <div class="criteria-card">
+          <h3>04 — Manufacturer</h3>
+
+          <p>
+            Is there clear information about the company behind the product?
+          </p>
+        </div>
+
+        <div class="criteria-card">
+          <h3>05 — Purchase Terms</h3>
+
+          <p>
+            Are pricing, guarantee and purchase conditions clearly presented?
+          </p>
+        </div>
+
+        <div class="criteria-card">
+          <h3>06 — Realistic Expectations</h3>
+
+          <p>
+            Be cautious of products making extreme or unrealistic promises.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCT REVIEW -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="review-box">
+
+        <div class="review-label">
+          Product Information
+        </div>
+
+        <h2>
+          One Formula We Reviewed: ProstaVive
+        </h2>
+
+        <p>
+          ProstaVive is a men's wellness supplement marketed as a daily
+          nutritional formula. If you're researching supplements in this
+          category, it may be useful to review the manufacturer's current
+          product information directly.
+        </p>
+
+        <p>
+          Our purpose here is not to diagnose or treat any health condition.
+          Instead, we're focusing on the information consumers can review
+          when evaluating a supplement.
+        </p>
+
+        <ul class="review-list">
+
+          <li>
+            ✓ Product and formula information available
+          </li>
+
+          <li>
+            ✓ Manufacturer information available
+          </li>
+
+          <li>
+            ✓ Direct access to current product details
+          </li>
+
+          <li>
+            ✓ Purchase and guarantee information available from the seller
+          </li>
+
+        </ul>
+
+        <a
+          href="https://66fa53kfzqfr3r1m2c72336q7f.hop.clickbank.net"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          class="primary-btn"
+        >
+          View Formula & Official Offer
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL CTA -->
+
+  <section class="final-cta">
+
+    <div class="container">
+
+      <h2>
+        Want To See The Formula?
+      </h2>
+
+      <p>
+        Visit the seller's website to review the current product,
+        ingredients, pricing, guarantee and purchase information.
+      </p>
+
+      <a
+        href="https://66fa53kfzqfr3r1m2c72336q7f.hop.clickbank.net"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+        class="primary-btn"
+      >
+        View The Official Offer
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- DISCLOSURE -->
+
+  <section class="disclosure">
+
+    <div class="container">
+
+      <p>
+        <strong>Affiliate Disclosure:</strong>
+        This website contains affiliate links. If you purchase a product
+        through one of our links, we may receive a commission at no
+        additional cost to you.
+      </p>
+
+      <p>
+        <strong>Important:</strong>
+        This website provides general educational information and is not
+        intended to provide medical advice, diagnosis or treatment.
+      </p>
+
+      <p>
+        Product information, ingredients, pricing, availability and
+        guarantees may change. Always review the seller's current
+        information before purchasing.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Men's Supplement Lab.
+      All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    const questions = [
+
+      {
+        question:
+          "Does the product clearly disclose the ingredients included in its formula?",
+        answers: [
+          "Yes, the ingredients are clearly listed.",
+          "I'm not sure.",
+          "No, I couldn't find them."
+        ]
+      },
+
+      {
+        question:
+          "Does the manufacturer provide clear information about the product?",
+        answers: [
+          "Yes, the information is easy to find.",
+          "Some information is available.",
+          "The information is unclear."
+        ]
+      },
+
+      {
+        question:
+          "Is the intended daily use clearly explained?",
+        answers: [
+          "Yes, it's clearly explained.",
+          "I'm not sure.",
+          "No, it isn't clear."
+        ]
+      },
+
+      {
+        question:
+          "Can you find clear information about the manufacturer or seller?",
+        answers: [
+          "Yes.",
+          "I'm not sure.",
+          "No."
+        ]
+      },
+
+      {
+        question:
+          "Are the purchase terms, pricing and guarantee information easy to understand?",
+        answers: [
+          "Yes.",
+          "Somewhat.",
+          "No."
+        ]
+      }
+
+    ];
+
+
+    let currentQuestion = 0;
+    let totalScore = 0;
+
+
+    const questionText =
+      document.getElementById("questionText");
+
+    const answersContainer =
+      document.getElementById("answers");
+
+    const progressBar =
+      document.getElementById("progressBar");
+
+    const progressText =
+      document.getElementById("progressText");
+
+    const percent =
+      document.getElementById("percent");
+
+    const questionsContainer =
+      document.getElementById("questions");
+
+    const result =
+      document.getElementById("result");
+
+    const score =
+      document.getElementById("score");
+
+
+    function loadQuestion() {
+
+      const q = questions[currentQuestion];
+
+      questionText.textContent = q.question;
+
+      answersContainer.innerHTML = "";
+
+
+      const progress =
+        ((currentQuestion + 1) / questions.length) * 100;
+
+      progressBar.style.width = progress + "%";
+
+      progressText.textContent =
+        `Question ${currentQuestion + 1} of ${questions.length}`;
+
+      percent.textContent =
+        Math.round(progress) + "%";
+
+
+      q.answers.forEach((answer, index) => {
+
+        const button =
+          document.createElement("div");
+
+        button.className = "answer";
+
+        button.textContent = answer;
+
+        button.addEventListener("click", () => {
+
+          /*
+            First answer = strongest checklist match
+            Second answer = neutral
+            Third answer = lower score
+          */
+
+          if (index === 0) {
+            totalScore += 20;
+          }
+
+          if (index === 1) {
+            totalScore += 10;
+          }
+
+          if (index === 2) {
+            totalScore += 0;
+          }
+
+          currentQuestion++;
+
+          if (currentQuestion < questions.length) {
+
+            loadQuestion();
+
+          } else {
+
+            showResult();
+
+          }
+
+        });
+
+        answersContainer.appendChild(button);
+
+      });
+
+    }
+
+
+    function showResult() {
+
+      questionsContainer.style.display = "none";
+
+      result.style.display = "block";
+
+      score.textContent = totalScore;
+
+      result.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+    }
+
+
+    loadQuestion();
+
+  </script>
+
+</body>
+</html>
