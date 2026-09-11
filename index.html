@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,179 +13,77 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Men's Supplement Lab | 60-Second Supplement Checklist</title>
-  <meta name="description" content="An independent educational checklist for evaluating men's wellness supplement formulas, ingredient transparency and product information.">
+  <title>Men's Supplement Lab | Prostate Supplement Buying Guide</title>
+  <meta name="description" content="A practical guide to comparing prostate support supplements, formula information, serving details and product options.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Men's Supplement Lab">
-  <meta property="og:description" content="Use the 60-Second Supplement Checklist to review what matters before choosing a men's wellness formula.">
+  <meta property="og:title" content="Men's Supplement Lab | Prostate Supplement Buying Guide">
+  <meta property="og:description" content="Understand what to check when comparing prostate support supplement options.">
+
   <style>
     :root{
-      --bg:#080a12;
-      --panel:#111522;
-      --panel2:#171b2b;
-      --text:#f5f7ff;
-      --muted:#a9afc3;
-      --line:rgba(255,255,255,.10);
-      --accent:#9b6cff;
-      --accent2:#6d45e8;
-      --good:#72e0a2;
-      --warning:#ffd166;
-      --danger:#ff7b8d;
-      --max:1120px;
-      --radius:22px;
+      --bg:#080a12;--panel:#111522;--panel2:#171b2b;--text:#f5f7ff;
+      --muted:#a9afc3;--line:rgba(255,255,255,.10);--accent:#9b6cff;
+      --accent2:#6d45e8;--good:#72e0a2;--max:1120px;--radius:22px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background:
-        radial-gradient(circle at 15% 0%, rgba(125,75,255,.18), transparent 32%),
-        radial-gradient(circle at 90% 15%, rgba(87,57,188,.12), transparent 28%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
+      radial-gradient(circle at 15% 0%,rgba(125,75,255,.18),transparent 32%),
+      radial-gradient(circle at 90% 15%,rgba(87,57,188,.12),transparent 28%),var(--bg);
+      color:var(--text);line-height:1.6}
     a{color:inherit}
     .container{width:min(calc(100% - 32px),var(--max));margin:auto}
-    nav{
-      position:sticky;top:0;z-index:20;
-      backdrop-filter:blur(14px);
-      background:rgba(8,10,18,.82);
-      border-bottom:1px solid var(--line);
-    }
-    .nav-inner{
-      min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px;
-    }
-    .brand{font-weight:800;letter-spacing:-.02em}
+    nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(8,10,18,.82);border-bottom:1px solid var(--line)}
+    .nav-inner{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:-.02em;text-decoration:none}
     .brand span{color:var(--accent)}
     .nav-links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
     .nav-links a{text-decoration:none}
-    .nav-links a:hover{color:var(--text)}
-    .hero{padding:84px 0 62px}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:8px;
-      border:1px solid rgba(155,108,255,.35);
-      background:rgba(155,108,255,.09);
-      color:#d9c9ff;
-      padding:8px 12px;border-radius:999px;font-size:13px;font-weight:700;
-    }
-    h1{
-      font-size:clamp(42px,7vw,76px);
-      line-height:1.02;letter-spacing:-.055em;
-      max-width:880px;margin:20px 0;
-    }
-    .hero p{max-width:720px;color:var(--muted);font-size:19px}
+    .hero{padding:84px 0 70px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+    .eyebrow,.tag{display:inline-flex;border:1px solid rgba(155,108,255,.35);background:rgba(155,108,255,.09);color:#d9c9ff;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-.055em;max-width:780px;margin:20px 0}
+    .hero p{max-width:700px;color:var(--muted);font-size:19px}
     .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      min-height:52px;padding:0 20px;border-radius:14px;
-      text-decoration:none;font-weight:800;border:1px solid var(--line);
-      cursor:pointer;transition:.2s transform,.2s background;
-    }
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;border-radius:14px;text-decoration:none;font-weight:800;border:1px solid var(--line);cursor:pointer;transition:.2s}
     .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent}
-    .btn-secondary{background:rgba(255,255,255,.04);color:var(--text)}
+    .btn-secondary{background:rgba(255,255,255,.04)}
     .micro{font-size:12px;color:#858ca4;margin-top:12px}
-    section{padding:64px 0}
-    .section-head{max-width:760px;margin-bottom:28px}
+    .hero-card,.card,.review-main,.review-side,.cta-strip{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:var(--radius)}
+    .hero-card{padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.24)}
+    .hero-card h3{font-size:26px;line-height:1.2;margin:8px 0 18px}
+    .check{display:flex;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+    .check:first-of-type{border-top:0}
+    .num{min-width:30px;height:30px;border-radius:50%;background:rgba(155,108,255,.13);color:#d8c8ff;display:grid;place-items:center;font-weight:900;font-size:13px}
+    .check strong{display:block;font-size:15px}
+    .check span{display:block;color:var(--muted);font-size:13px}
+    section{padding:68px 0}
+    .section-head{max-width:760px;margin-bottom:30px}
     .section-head h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.035em;margin:0 0 12px}
-    .section-head p{color:var(--muted);margin:0}
-    .quiz-wrap{
-      background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.025));
-      border:1px solid var(--line);border-radius:var(--radius);
-      padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.24);
-    }
-    .progress-top{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13px;margin-bottom:10px}
-    .progress{height:8px;background:#252a3b;border-radius:999px;overflow:hidden}
-    .progress-bar{height:100%;width:20%;background:linear-gradient(90deg,var(--accent),#c0a4ff);transition:width .25s}
-    .question{display:none;padding:34px 0 10px}
-    .question.active{display:block}
-    .question h3{font-size:26px;line-height:1.25;margin:0 0 20px}
-    .options{display:grid;gap:12px}
-    .option{
-      width:100%;text-align:left;
-      background:rgba(255,255,255,.035);
-      color:var(--text);border:1px solid var(--line);
-      border-radius:16px;padding:17px 18px;cursor:pointer;
-      font-size:16px;transition:.18s;
-    }
-    .option:hover{border-color:rgba(155,108,255,.6);background:rgba(155,108,255,.08)}
-    .option.selected{border-color:var(--accent);background:rgba(155,108,255,.14)}
-    .quiz-nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px}
-    .result{display:none;text-align:center;padding:32px 0 10px}
-    .score{
-      width:150px;height:150px;border-radius:50%;
-      display:grid;place-items:center;margin:0 auto 20px;
-      border:10px solid rgba(155,108,255,.18);
-      background:rgba(155,108,255,.07);
-    }
-    .score strong{font-size:42px;line-height:1}
-    .score small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-    .result h3{font-size:30px;margin:8px 0}
-    .result p{max-width:650px;margin:0 auto;color:var(--muted)}
-    .result-note{
-      margin:20px auto 0;max-width:720px;padding:14px 16px;
-      background:rgba(255,255,255,.035);border:1px solid var(--line);
-      border-radius:14px;color:#cbd0df;font-size:14px;
-    }
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-    .card{
-      background:rgba(255,255,255,.035);
-      border:1px solid var(--line);border-radius:18px;padding:24px;
-    }
-    .card-number{
-      width:34px;height:34px;border-radius:10px;
-      display:grid;place-items:center;background:rgba(155,108,255,.13);
-      color:#d8c8ff;font-weight:900;margin-bottom:16px;
-    }
+    .section-head p{color:var(--muted);margin:0;font-size:16px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{padding:24px}
+    .card-number{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(155,108,255,.13);color:#d8c8ff;font-weight:900;margin-bottom:16px}
     .card h3{margin:0 0 8px;font-size:20px}
-    .card p{margin:0;color:var(--muted)}
-    .review{
-      display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch;
-    }
-    .review-main,.review-side{
-      background:linear-gradient(180deg,rgba(155,108,255,.08),rgba(255,255,255,.025));
-      border:1px solid var(--line);border-radius:var(--radius);padding:30px;
-    }
-    .tag{display:inline-block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:#cfc0ff}
-    .review h2{font-size:38px;line-height:1.08;letter-spacing:-.035em;margin:10px 0 14px}
-    .review p{color:var(--muted)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .review{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}
+    .review-main,.review-side{padding:30px;background:linear-gradient(180deg,rgba(155,108,255,.08),rgba(255,255,255,.025))}
+    .review-main h2{font-size:40px;line-height:1.08;letter-spacing:-.035em;margin:12px 0}
+    .review-main p,.review-side li{color:var(--muted)}
     .check-list{padding:0;margin:22px 0;list-style:none}
     .check-list li{display:flex;gap:10px;margin:12px 0;color:#dfe3ef}
     .check-list li::before{content:"✓";color:var(--good);font-weight:900}
-    .review-side h3{margin-top:0}
-    .review-side ul{color:var(--muted);padding-left:20px}
-    .disclosure{
-      font-size:12px;color:#838aa1;margin-top:18px;
-    }
-    .cta-strip{
-      text-align:center;padding:52px 26px;
-      border:1px solid rgba(155,108,255,.24);
-      background:linear-gradient(135deg,rgba(155,108,255,.12),rgba(255,255,255,.025));
-      border-radius:var(--radius);
-    }
+    .disclosure{font-size:12px;color:#838aa1;margin-top:18px}
+    .cta-strip{text-align:center;padding:52px 26px;background:linear-gradient(135deg,rgba(155,108,255,.12),rgba(255,255,255,.025))}
     .cta-strip h2{font-size:38px;line-height:1.1;margin:0 auto 12px;max-width:760px}
     .cta-strip p{color:var(--muted);max-width:700px;margin:0 auto 24px}
     footer{padding:46px 0 70px;border-top:1px solid var(--line);color:#7f879e;font-size:13px}
     .footer-links{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px}
     .footer-links a{color:#aeb4c6;text-decoration:none}
     .legal{max-width:900px}
-    @media(max-width:800px){
-      .nav-links{display:none}
-      .hero{padding-top:58px}
-      .grid,.review{grid-template-columns:1fr}
-      .quiz-wrap{padding:20px}
-      .review h2{font-size:31px}
-    }
-    @media(max-width:520px){
-      .container{width:min(calc(100% - 22px),var(--max))}
-      h1{font-size:43px}
-      .hero p{font-size:17px}
-      .hero-actions .btn{width:100%}
-      .quiz-nav{flex-direction:column-reverse}
-      .quiz-nav .btn{width:100%}
-    }
+    @media(max-width:800px){.nav-links{display:none}.hero{padding-top:58px}.hero-grid,.grid,.review{grid-template-columns:1fr}}
+    @media(max-width:520px){.container{width:min(calc(100% - 22px),var(--max))}h1{font-size:43px}.hero p{font-size:17px}.hero-actions .btn{width:100%}}
   </style>
 </head>
 <body>
@@ -195,7 +96,7 @@
   <div class="container nav-inner">
     <a class="brand" href="#top" aria-label="Men's Supplement Lab home">Men's <span>Supplement Lab</span></a>
     <div class="nav-links">
-      <a href="#checklist">Checklist</a>
+      <a href="#guide">Buying Guide</a>
       <a href="#criteria">What to Check</a>
       <a href="#review">Product Review</a>
     </div>
@@ -204,144 +105,43 @@
 
 <main id="top">
   <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Independent educational guide</div>
-      <h1>What should you look for in a men's wellness formula?</h1>
-      <p>
-        Choosing a supplement can be confusing. Instead of relying on hype, use a simple
-        checklist to review ingredient transparency, serving information, product details
-        and purchase terms.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#checklist" data-track="hero_checklist">Take the 60-Second Checklist</a>
-        <a class="btn btn-secondary" href="#criteria">See What We Check</a>
-      </div>
-      <div class="micro">Educational information only. This page is not medical advice and does not diagnose or treat any condition.</div>
-    </div>
-  </section>
-
-  <section id="checklist">
-    <div class="container">
-      <div class="section-head">
-        <h2>The 60-Second Supplement Checklist</h2>
-        <p>Answer five simple questions. Your score reflects how much basic product information is available to you—not your health, symptoms or medical status.</p>
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Independent supplement guide</div>
+        <h1>What should you look for in a prostate supplement?</h1>
+        <p>Comparing supplements can be confusing. We break down the practical details worth checking before you decide: formula information, serving details, product format and purchase information.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#guide" data-track="hero_guide">See the Buying Guide →</a>
+          <a class="btn btn-secondary" href="#review" data-track="hero_review">See the Product Review</a>
+        </div>
+        <div class="micro">Educational information only. This page is not medical advice.</div>
       </div>
 
-      <div class="quiz-wrap">
-        <div class="progress-top">
-          <span id="progressLabel">Question 1 of 5</span>
-          <span id="progressPercent">20%</span>
-        </div>
-        <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
-
-        <div class="question active" data-q="0">
-          <h3>1. Does the formula clearly list its ingredients?</h3>
-          <div class="options">
-            <button class="option" data-score="2">Yes, the ingredients are clearly listed.</button>
-            <button class="option" data-score="1">Some information is available.</button>
-            <button class="option" data-score="0">The information is unclear or difficult to find.</button>
-          </div>
-        </div>
-
-        <div class="question" data-q="1">
-          <h3>2. Is the recommended daily serving easy to understand?</h3>
-          <div class="options">
-            <button class="option" data-score="2">Yes, it is clearly explained.</button>
-            <button class="option" data-score="1">It is mentioned, but not very clearly.</button>
-            <button class="option" data-score="0">I cannot easily find it.</button>
-          </div>
-        </div>
-
-        <div class="question" data-q="2">
-          <h3>3. Can you find clear information about the product and manufacturer?</h3>
-          <div class="options">
-            <button class="option" data-score="2">Yes, the information is easy to find.</button>
-            <button class="option" data-score="1">There is some basic information.</button>
-            <button class="option" data-score="0">The information is unclear.</button>
-          </div>
-        </div>
-
-        <div class="question" data-q="3">
-          <h3>4. Are the purchase terms and refund information easy to understand?</h3>
-          <div class="options">
-            <button class="option" data-score="2">Yes, they are clearly stated.</button>
-            <button class="option" data-score="1">Some details are available.</button>
-            <button class="option" data-score="0">I cannot easily find them.</button>
-          </div>
-        </div>
-
-        <div class="question" data-q="4">
-          <h3>5. Does the product information avoid unrealistic promises?</h3>
-          <div class="options">
-            <button class="option" data-score="2">Yes, expectations are presented realistically.</button>
-            <button class="option" data-score="1">Some claims make me uncertain.</button>
-            <button class="option" data-score="0">The claims seem exaggerated.</button>
-          </div>
-        </div>
-
-        <div class="quiz-nav" id="quizNav">
-          <button class="btn btn-secondary" id="backBtn" type="button">Back</button>
-          <button class="btn btn-primary" id="nextBtn" type="button" disabled>Next question</button>
-        </div>
-
-        <div class="result" id="result">
-          <div class="score">
-            <div>
-              <strong id="scoreNumber">0/10</strong>
-              <small>checklist score</small>
-            </div>
-          </div>
-          <h3 id="resultTitle">Your result</h3>
-          <p id="resultText"></p>
-          <div class="result-note">
-            This score is an educational checklist only. It is not a medical assessment,
-            diagnosis, treatment recommendation or statement about whether a supplement is appropriate for you.
-          </div>
-          <div style="margin-top:24px">
-            <a class="btn btn-primary" href="#review" data-track="result_review">Continue to the product review</a>
-          </div>
-        </div>
+      <div class="hero-card">
+        <div class="tag">Before you choose</div>
+        <h3>5 things worth checking</h3>
+        <div class="check"><div class="num">1</div><div><strong>Formula transparency</strong><span>Can you clearly understand what the product contains?</span></div></div>
+        <div class="check"><div class="num">2</div><div><strong>Ingredient information</strong><span>Is useful product information easy to review?</span></div></div>
+        <div class="check"><div class="num">3</div><div><strong>Serving information</strong><span>Is the recommended serving clearly presented?</span></div></div>
+        <div class="check"><div class="num">4</div><div><strong>Product format</strong><span>Does the format fit your preferences?</span></div></div>
+        <div class="check"><div class="num">5</div><div><strong>Purchase details</strong><span>Are pricing, ordering and product details clear?</span></div></div>
       </div>
     </div>
   </section>
 
-  <section id="criteria">
+  <section id="guide">
     <div class="container">
       <div class="section-head">
-        <h2>Five things worth checking</h2>
-        <p>A better supplement decision starts with information you can actually verify.</p>
+        <h2>A simpler way to compare your options</h2>
+        <p>You don't need to know everything about supplements. Start with a few objective details and use them to make a more informed comparison.</p>
       </div>
-      <div class="grid">
-        <article class="card">
-          <div class="card-number">1</div>
-          <h3>Ingredient transparency</h3>
-          <p>Look for a clearly presented ingredient list rather than vague proprietary language that makes comparison difficult.</p>
-        </article>
-        <article class="card">
-          <div class="card-number">2</div>
-          <h3>Serving clarity</h3>
-          <p>The recommended serving should be straightforward so you understand how the product is intended to be used.</p>
-        </article>
-        <article class="card">
-          <div class="card-number">3</div>
-          <h3>Product information</h3>
-          <p>Check whether the manufacturer, product details and relevant consumer information are easy to locate.</p>
-        </article>
-        <article class="card">
-          <div class="card-number">4</div>
-          <h3>Purchase terms</h3>
-          <p>Before buying, review the current price, shipping details and refund or guarantee terms presented by the seller.</p>
-        </article>
-        <article class="card">
-          <div class="card-number">5</div>
-          <h3>Realistic expectations</h3>
-          <p>Be cautious with pages that promise extraordinary or guaranteed results. Marketing language should not replace evidence.</p>
-        </article>
-        <article class="card">
-          <div class="card-number">6</div>
-          <h3>Do your own research</h3>
-          <p>Use product information as one input. If you have health questions or take medication, speak with an appropriately qualified professional.</p>
-        </article>
+      <div class="grid" id="criteria">
+        <article class="card"><div class="card-number">01</div><h3>Formula transparency</h3><p>Look for clear information about the product formula rather than relying only on marketing language.</p></article>
+        <article class="card"><div class="card-number">02</div><h3>Ingredient information</h3><p>Review the information provided about the ingredients and how they are presented.</p></article>
+        <article class="card"><div class="card-number">03</div><h3>Serving details</h3><p>Check the stated serving size and directions so you know exactly what the product page says.</p></article>
+        <article class="card"><div class="card-number">04</div><h3>Product format</h3><p>Consider whether the format and routine are practical for your preferences.</p></article>
+        <article class="card"><div class="card-number">05</div><h3>Purchase details</h3><p>Before ordering, review the current product, pricing and purchase information on the seller's page.</p></article>
+        <article class="card"><div class="card-number">06</div><h3>Realistic expectations</h3><p>Be cautious with extraordinary or guaranteed claims. Marketing language should not replace evidence.</p></article>
       </div>
     </div>
   </section>
@@ -349,39 +149,23 @@
   <section id="review">
     <div class="container">
       <div class="section-head">
-        <h2>One formula we reviewed</h2>
-        <p>After the checklist, you can review product information for a men's wellness formula that is available through an independent seller.</p>
+        <h2>One prostate supplement we reviewed</h2>
+        <p>After looking at the criteria above, we can apply the same framework to a specific product.</p>
       </div>
 
       <div class="review">
         <div class="review-main">
-          <span class="tag">Independent product review</span>
+          <span class="tag">Product review</span>
           <h2>ProstaVive</h2>
-          <p>
-            ProstaVive is a men's wellness supplement offered through ClickBank's marketplace.
-            We are presenting it as a product to research—not as an official site, manufacturer,
-            medical provider or guarantee of results.
-          </p>
-
+          <p>We reviewed the product page using the same practical checklist: product information, formula details, serving information and purchase details.</p>
           <ul class="check-list">
             <li>Review the current product information before purchasing.</li>
-            <li>Check the current serving and ingredient information on the seller's page.</li>
+            <li>Check current serving and ingredient information on the seller's page.</li>
             <li>Review current pricing, shipping and purchase terms before ordering.</li>
             <li>Make your own decision based on the information available.</li>
           </ul>
-
-          <a
-            class="btn btn-primary"
-            href="https://66fa53kfzqfr3r1m2c72336q7f.hop.clickbank.net"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            data-track="prostavive_click"
-          >Review Product Details</a>
-
-          <div class="disclosure">
-            Affiliate disclosure: We may receive a commission if you purchase through a link on this page.
-            This does not change the price you pay.
-          </div>
+          <a class="btn btn-primary cta" href="https://66fa53kfzqfr3r1m2c72336q7f.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" data-track="prostavive_click">See ProstaVive Details →</a>
+          <div class="disclosure">Affiliate disclosure: We may receive a commission if you purchase through a link on this page. This does not change the price you pay.</div>
         </div>
 
         <aside class="review-side">
@@ -390,11 +174,9 @@
             <li>Read the current product label and seller information.</li>
             <li>Check whether the product fits your personal circumstances.</li>
             <li>Do not treat this page as medical advice.</li>
-            <li>If you have a medical condition, take medication, or have questions about a supplement, consult a qualified healthcare professional.</li>
+            <li>If you have health questions about a supplement, consult a qualified healthcare professional.</li>
           </ul>
-          <p class="micro">
-            Information, availability, pricing and purchase terms can change. The seller's current page controls the purchase details.
-          </p>
+          <p class="micro">Information, availability, pricing and purchase terms can change. The seller's current page controls the purchase details.</p>
         </aside>
       </div>
     </div>
@@ -403,9 +185,9 @@
   <section>
     <div class="container">
       <div class="cta-strip">
-        <h2>Know what to check before you choose.</h2>
-        <p>Use the checklist, review the product information and make an informed purchasing decision based on the details available to you.</p>
-        <a class="btn btn-primary" href="#checklist" data-track="final_checklist">Take the Checklist</a>
+        <h2>Ready to review the product details?</h2>
+        <p>See the current product information directly on the seller's page before making your own decision.</p>
+        <a class="btn btn-primary cta" href="https://66fa53kfzqfr3r1m2c72336q7f.hop.clickbank.net" target="_blank" rel="nofollow sponsored noopener" data-track="prostavive_click_final">Review Product Details →</a>
       </div>
     </div>
   </section>
@@ -414,109 +196,41 @@
 <footer>
   <div class="container">
     <div class="footer-links">
-      <a href="#top">Home</a>
-      <a href="#criteria">What We Check</a>
-      <a href="#review">Product Review</a>
+      <a href="#top">Home</a><a href="#criteria">What We Check</a><a href="#review">Product Review</a>
     </div>
     <div class="legal">
-      <strong>Important disclosure:</strong> Men's Supplement Lab is an independent informational and affiliate website. We are not the manufacturer, creator, owner or official representative of ProstaVive.
-      Any product information should be verified on the seller's current page.
-      We do not provide medical advice, diagnosis or treatment. Statements on this website are for educational purposes only.
-      If you have health concerns or questions about supplements, consult a qualified healthcare professional.
+      <strong>Affiliate disclosure:</strong> Some links on this website may be affiliate links. If you purchase through one of these links, we may receive a commission at no additional cost to you.
+      <br><br>
+      Men's Supplement Lab is not the manufacturer, creator, owner or official representative of ProstaVive.
+      Product names and trademarks belong to their respective owners. Information may change; always check the seller's current page for the latest product, pricing and ordering details.
+      <br><br>
+      This website provides general educational information and is not intended to diagnose, treat, cure or prevent any disease.
     </div>
-    <div class="micro">© <span id="year"></span> Men's Supplement Lab. All rights reserved.</div>
+    <div class="micro">© 2026 Men's Supplement Lab. Educational content only.</div>
   </div>
 </footer>
 
 <script>
 (function(){
-  const questions = [...document.querySelectorAll('.question')];
-  const progressBar = document.getElementById('progressBar');
-  const progressLabel = document.getElementById('progressLabel');
-  const progressPercent = document.getElementById('progressPercent');
-  const nextBtn = document.getElementById('nextBtn');
-  const backBtn = document.getElementById('backBtn');
-  const quizNav = document.getElementById('quizNav');
-  const result = document.getElementById('result');
-  const scoreNumber = document.getElementById('scoreNumber');
-  const resultTitle = document.getElementById('resultTitle');
-  const resultText = document.getElementById('resultText');
-  const answers = new Array(questions.length).fill(null);
-  let current = 0;
-
-  function track(eventName, data){
-    try {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: eventName,
-        ...data
-      });
-    } catch(e){}
-  }
-
-  function render(){
-    questions.forEach((q,i)=>q.classList.toggle('active', i===current));
-    const pct = Math.round(((current+1)/questions.length)*100);
-    progressBar.style.width = pct + '%';
-    progressLabel.textContent = 'Question ' + (current+1) + ' of ' + questions.length;
-    progressPercent.textContent = pct + '%';
-    nextBtn.disabled = answers[current] === null;
-    nextBtn.textContent = current === questions.length-1 ? 'See my score' : 'Next question';
-    backBtn.style.visibility = current === 0 ? 'hidden' : 'visible';
-  }
-
-  document.querySelectorAll('.option').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const q = btn.closest('.question');
-      const index = Number(q.dataset.q);
-      q.querySelectorAll('.option').forEach(b=>b.classList.remove('selected'));
-      btn.classList.add('selected');
-      answers[index] = Number(btn.dataset.score);
-      nextBtn.disabled = false;
-      track('checklist_answer', {question: index + 1, score: answers[index]});
+  /*
+    IMPORTANT:
+    The existing GTM container remains untouched.
+    The existing dataLayer event names remain available:
+    checklist_answer and checklist_complete.
+    The checklist UI was removed from the page, so those two events simply
+    will not fire from this version.
+  */
+  document.querySelectorAll('[data-track]').forEach(function(el){
+    el.addEventListener('click', function(){
+      try {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event:'cta_click',
+          cta:el.dataset.track
+        });
+      } catch(e) {}
     });
   });
-
-  nextBtn.addEventListener('click', ()=>{
-    if(answers[current] === null) return;
-    if(current < questions.length-1){
-      current++;
-      render();
-      document.getElementById('checklist').scrollIntoView({behavior:'smooth', block:'start'});
-    }else{
-      const total = answers.reduce((a,b)=>a+(b||0),0);
-      scoreNumber.textContent = total + '/10';
-
-      if(total >= 8){
-        resultTitle.textContent = 'Strong information check';
-        resultText.textContent = 'You are already checking several of the basics that can make supplement research easier. Keep verifying the product details before making a purchase.';
-      }else if(total >= 5){
-        resultTitle.textContent = 'Good starting point';
-        resultText.textContent = 'You have some useful information, but a few areas deserve a closer look before you choose a formula.';
-      }else{
-        resultTitle.textContent = 'More information is worth checking';
-        resultText.textContent = 'Several basic details may need closer attention. Use the criteria below to compare product information more carefully.';
-      }
-
-      questions.forEach(q=>q.style.display='none');
-      quizNav.style.display='none';
-      result.style.display='block';
-      track('checklist_complete', {score: total});
-    }
-  });
-
-  backBtn.addEventListener('click', ()=>{
-    if(current>0){ current--; render(); }
-  });
-
-  document.querySelectorAll('[data-track]').forEach(el=>{
-    el.addEventListener('click', ()=>{
-      track('cta_click', {cta: el.dataset.track});
-    });
-  });
-
-  document.getElementById('year').textContent = new Date().getFullYear();
-  render();
 })();
 </script>
 </body>
